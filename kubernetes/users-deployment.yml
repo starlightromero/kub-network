@@ -30,8 +30,3 @@ spec:
       containers:
         - name: users
           image: starlightromero/kub-network-users:latest
-          env:
-            - name: AUTH_ADDRESS
-              value: localhost
-        - name: auth
-          image: starlightromero/kub-network-auth:latest
