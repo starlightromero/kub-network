@@ -29,4 +29,6 @@ spec:
     spec:
       containers:
         - name: users
-          image: starlightromero/kub-network-users
+          image: starlightromero/kub-network-users:latest
+        - name: auth
+          image: starlightromero/kub-network-auth:latest
