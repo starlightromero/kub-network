@@ -30,3 +30,6 @@ spec:
       containers:
         - name: users
           image: starlightromero/kub-network-users:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: "auth-service.default"
