@@ -8,7 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const fetchTasks = useCallback(function () {
-    fetch('api/tasks', {
+    fetch('/api/tasks', {
       headers: {
         'Authorization': 'Bearer abc'
       }
