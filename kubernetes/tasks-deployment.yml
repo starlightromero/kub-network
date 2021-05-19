@@ -33,3 +33,5 @@ spec:
           env:
             - name: TASKS_FOLDER
               value: tasks
+            - name: AUTH_ADDRESS
+              value: "auth-service.default"
