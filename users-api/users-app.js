@@ -1,10 +1,9 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.post('/signup', async (req, res) => {
   // It's just a dummy service - we don't really care for the email
