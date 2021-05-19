@@ -32,14 +32,4 @@ spec:
           image: starlightromero/kub-network-tasks:latest
           env:
             - name: TASKS_FOLDER
-              valueFrom:
-                configMapKeyRef:
-                  name: data-store-env
-                  key: folder
-          volumeMounts:
-            - mountPath: /app/tasks
-              name: tasks-volume
-      volumes:
-        - name: tasks-volume
-          persistentVolumeClaim:
-            claimName: tasks-pvc
+              value: tasks
